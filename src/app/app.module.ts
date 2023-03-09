@@ -4,9 +4,12 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { CurrentweatherComponent } from './currentweather/currentweather.component';
 import { WeatherIconsComponent } from './weather-icons/weather-icons.component';
-import { ForecastComponent } from './forecast/forecast.component'
+import { ForecastComponent } from './forecast/forecast.component';
+import { WeatherCardComponent } from './weather-card/weather-card.component';
+import { LoadingComponent } from './loading/loading.component'
 
 
 @NgModule({
@@ -14,12 +17,16 @@ import { ForecastComponent } from './forecast/forecast.component'
     AppComponent,
     CurrentweatherComponent,
     WeatherIconsComponent,
-    ForecastComponent
+    ForecastComponent,
+    WeatherCardComponent,
+    LoadingComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,1 +1,3 @@
-<p>forecast works!</p>
+<div>
+  <app-weather-card [weather]="weather" *ngFor="let weather of forecastSVC.weather$ | async"></app-weather-card>
+</div>
